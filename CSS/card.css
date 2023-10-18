@@ -1,0 +1,70 @@
+
+.contenedor-card {
+    display: flex;
+    margin: 16px auto;
+    gap: 24px;
+}
+
+.card {
+    border: 2px solid var(--gris);
+    background-color: var(--gris);
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    flex-direction: column ;
+    overflow: hidden;
+    padding-bottom: 16px ;
+    box-shadow: -5px 15px 10px #888888;
+}
+
+.detalle-card {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-items: center;
+    gap: 8px;
+    /* margin: auto; */
+}
+
+.detalle-card .descripcion-card {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-items: center;
+    gap: 24px;
+}
+
+.card img {
+    display: flex;
+    align-items: center;
+    max-width: 100%;
+}
+
+.precio {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.valoraciones {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    flex-direction: row;
+}
+
+.valoraciones-positivas {
+    color: var(--primario);
+}
+
+.valoraciones-negativas {
+    color: var(--resalto);
+}
+
+.card-botones {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+}
+

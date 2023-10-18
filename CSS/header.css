@@ -1,0 +1,89 @@
+
+header {
+    background-color: var(--negro);
+}
+
+.header-principal {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: var(--negro); */
+    padding: 32px 32px 0 64px;
+    gap: 64px;
+    width: 80%;
+}
+
+header .logo-cabecera {
+    flex: 1;
+    margin: auto;
+    width: 100%;
+}
+
+/*ESTILOS PARA EL BUSCADOR*/
+.buscador-carrito {
+    display: flex;
+    flex: 2;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.header-principal .buscador {
+    flex: 1;
+    width: 480px;
+    align-content: center;
+}
+
+.header-principal .buscador input {
+    width: 400px;
+    padding: 16px 24px;
+    border: none;
+    border-radius: 8px;
+    align-items: center;
+}
+
+
+/* ESTILOS PARA CONTROLAR EL CARRITO */
+.carrito { /*Controla el carrito*/
+    position: relative;
+    color: var(--blanco);
+    align-items: left;
+    justify-content: space-around;
+    margin: auto;
+}
+
+.numero-carrito { /*Controla los estilos del número del carrito*/
+    position:absolute;
+    top: -24px;
+    right: -8px;
+    font-size: 0.75rem;
+    font-weight: bold;
+    width: 24px;
+    height: 24px;
+    color: var(--primario);
+    background-color: var(--blanco);
+    border: 0.5px solid var(--primario);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
+
+.header-secundario {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: var(--primario);
+    padding: 16px 16px 0 16px;
+}
+
+.menu-header-1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--negro);
+    gap: 16px;
+}
+

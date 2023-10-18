@@ -1,0 +1,32 @@
+.btn, button {
+    color: var(--blanco);
+    background-color: var(--primario);
+    border: none;
+    border-radius: 8px;
+    padding: 16px 24px;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn-block { /*Estilos para cambiar display de botones a BLOCK y que ocupen todo el contenedor*/
+    display: block;
+    
+    
+}
+
+.btn-secundario { /*Controla los estilos de los botones secundarios*/
+    background-color: var(--secundario);
+    color: var(--blanco);
+}
+
+/*Estilos para botones de navegación*/
+
+ul, li, a {     /*Quitar estilos a las listas*/
+    list-style: none;
+    text-decoration: none;
+    list-style: none;
+    color: var(--blanco);
+  }
+  
+
