@@ -1,0 +1,40 @@
+.contenedor-iconos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    width: 1080px;
+    margin: auto;
+    gap: 32px;
+    text-align: center;
+    margin-bottom: 32px ;
+   
+}
+
+.contenedor-individual-iconos {
+   display: flex;
+   align-items: center;
+   border: 1px solid var(--primario);
+   border-radius: 8px;
+   padding: 0 32px;
+   /* background-color: var(--blanco); */
+   width: 100%;
+}
+
+.icono {
+   color: var(--primario); 
+   font-size: 4.5rem;
+   text-shadow: -5px 3px 8px var(--negro);
+   align-items: center;
+   
+}
+
+.texto-icono {
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+   text-align: center;
+   font-weight: 600;
+
+}
+

@@ -7,18 +7,16 @@
     font-weight: bold;
     text-decoration: none;
     display: inline-block;
+
+    transform: all 0.3;
 }
 
 .btn-block { /*Estilos para cambiar display de botones a BLOCK y que ocupen todo el contenedor*/
     display: block;
-    
-    
+    margin: auto;
+    margin-bottom: 32px;
 }
 
-.btn-secundario { /*Controla los estilos de los botones secundarios*/
-    background-color: var(--secundario);
-    color: var(--blanco);
-}
 
 /*Estilos para botones de navegación*/
 

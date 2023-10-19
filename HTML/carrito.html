@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Productos</title>
+    <title>Carrito</title>
     <!--Google fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="/CSS/card.css">
     <link rel="stylesheet" href="/CSS/iconos.css">
     <link rel="stylesheet" href="/CSS/footer.css">
+    <link rel="stylesheet" href="/CSS/cart.css">
   </head>
   <body>
     <header>
@@ -27,16 +28,21 @@
             <img src="/Imagenes/Logo-gnaranja-blanco.png" class="logo-cabecera" alt="Logo Oficial Gnaranja"/>
             </div>
 
-            <div class="buscador-carrito">
-              <div class="buscador"> <!-- Encabezado buscador -->
-              <input type="text" id="buscador" placeholder="!El que busca encuentra!"/>
-              <span><i class="bi bi-search"></i></span>
-              </div>
+            
+            <div> 
+              <button type="button">Carrito</a></button>
+            </div>
+             
+            <div class="botones-header"> <!-- Encabezado carrito -->
+              <span><i class="bi bi-arrow-right-square-fill"></i></span>                  
+              <button type="button"><span><i class="bi bi-credit-card-2-back"></i></span>Forma de pago</a></button>
+              <span><i class="bi bi-arrow-right-square-fill"></i></span>
+              <button type="button"><span><i class="bi bi-check2-circle"></i></span>Finalizar pedido</a></button>
+            </div>
+              
+             
 
-              <div class="carrito"> <!-- Encabezado carrito -->
-              <button type="button" class="btn"><a href="#">Carrito</a></button>
-              <span class="circulo-numero"><p class="numero-carrito">5</p></span>
-              </div>
+             
           </div>
           </div>
     </header>
@@ -44,35 +50,21 @@
         <div>
         <nav class="header-secundario"><!--Inicio contenedor navegador cabecera-->
             <div> <!--Contenedor navegador 1-->
-              <ul class="menu-header-1">
-                <li><a href="#">Productos</a></li>
-                <li><a href="#">Nosotros</a></li>
-                <li><a href="#">Contacto</a></li>
-              </ul>
+             <H1 class="h2">Mi Carrito</H1>
             </div>
     
             <div> <!--Contenedor navegador 2-->
-              <ul class="menu-header-1">
-                <li><a href="#">Mis pedidos</a></li>
-                <li><a href="#">Logout</a></li>
-              </ul>
+              <button type="button" class="btn"><a href="#">Seguir comprando</a></button>
             </div>
           </nav> <!--Cierre contededor navegador cabecera-->
       </div>
 
     <main class="wrap">
       <section> <!--Contenedor apertura de producto-->
+        <div class="cart-contenedor-principal"> <!--Contenedor general de productos-->
 
-          <h1 class="h3">Mejores productos tecnológicos 2023</h1>
-          <h3 class="h4">¡Artículos Geniales para Gente Encantadora!</h3>
-          <button type="button" class="btn-block"><a href="#">Ver todos los productos</a></button>
-        
-     <div class="contenedor-card"> <!--Contenedor general de productos-->
-
-
-                    <!-- ****** CONTENEDOR PRODUCTO UNO ******-->
-
-        <div class="card"> 
+                <!-- ****** CONTENEDOR PRODUCTO UNO ******-->
+          <div class="card"> 
 
           <div> <!--Contenedor imagen producto 1-->
             <img src="/Imagenes/Altavoces.jpg" alt="Altavoces" />
@@ -89,19 +81,6 @@
               </div>
             </div>
 
-           
-            <div class="valoraciones"> <!--Contenedor valoración producto 1-->
-              <div class="valoraciones-positivas">
-                <span><i class="bi bi-star"></i></span>
-                <span><i class="bi bi-star"></i></span>
-                <span><i class="bi bi-star"></i></span>
-                <span><i class="bi bi-star"></i></span>
-              </div>
-
-              <div class="valoraciones-negativas">
-                <span><i class="bi bi-star"></i></span>
-              </div>
-            </div> <!--Cierre contenedor valoración producto 1-->
 
             <p>Consigue los mejores productos 2023</p>
            
@@ -244,42 +223,45 @@
 
 
     <div class="contenedor-iconos"> <!--Contenedor Garantias y servicios ICONOS-->
-        
-        <div class="contenedor-individual-iconos"> <!--Pago seguro-->
+        <div class="contenedor-individual-iconos">
+        <div> <!--Pago seguro-->
             <span><i class="bi bi-cone-striped icono"></i></span>
             <div class="texto-icono">
                 <h5>Pago seguro</h5>
                 <p>100% garantizado</p>
             </div>
         </div>
-      
+      </div>
 
-        <div  class="contenedor-individual-iconos"> <!--Envío gratis-->
+      <div class="contenedor-individual-iconos">
+        <div> <!--Envío gratis-->
             <span><i class="bi bi bi-truck icono"></i></span>
             <div class="texto-icono">
                 <h5>Envío gratis</h5>
                 <p>En pedidos +100€</p>
             </div>
         </div>
-      
+      </div>
 
-      
-        <div  class="contenedor-individual-iconos"> <!--2 años garantía-->
+      <div class="contenedor-individual-iconos">
+        <div> <!--2 años garantía-->
             <span><i class="bi bi-check-square-fill icono"></i></span>
             <div class="texto-icono">
                 <h5>2 años de garantía</h5>
                 <p>En todos los productos</p>
             </div>
         </div>
-      
-        <div class="contenedor-individual-iconos"> <!--Ofertas únicas-->
+      </div>
+        
+      <div class="contenedor-individual-iconos">
+        <div> <!--Ofertas únicas-->
             <span><i class="bi bi-gift-fill icono"></i></span>
             <div class="texto-icono">
                 <h5>Ofertas únicas</h5>
                 <p>Precios de mayoristas</p>
             </div>
         </div>
-    
+      </div>
     </div>  <!--Cierre contenedor Garantias y servicios-->
 
     <footer>

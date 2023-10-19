@@ -6,7 +6,6 @@
 }
 
 .card {
-    border: 2px solid var(--gris);
     background-color: var(--gris);
     border-radius: 16px;
     display: flex;
@@ -29,10 +28,11 @@
 
 .detalle-card .descripcion-card {
     display: flex;
-    align-items: center;
+    align-items: baseline;
     flex-direction: row;
     justify-items: center;
-    gap: 24px;
+    gap: 8px;
+   
 }
 
 .card img {
@@ -45,6 +45,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    font-size: x-large;
+    font-weight: 800;
+    color: var(--primario);
 }
 
 .valoraciones {
@@ -59,7 +62,7 @@
 }
 
 .valoraciones-negativas {
-    color: var(--resalto);
+    color: #ffd6b0;
 }
 
 .card-botones {
@@ -67,4 +70,15 @@
     flex-direction: row;
     gap: 16px;
 }
+
+.btn-secundario { /*Controla los estilos de los botones secundarios*/
+    background-color: var(--blanco);
+    border: 1px solid var(--secundario);
+}
+
+.detalle-card .card-botones .btn-secundario a {
+    color: var(--secundario);
+}
+
+
 
