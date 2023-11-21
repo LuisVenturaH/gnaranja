@@ -15,36 +15,36 @@
     <link rel="stylesheet" href="/CSS/header.css">
     <link rel="stylesheet" href="/CSS/button.css">
     <link rel="stylesheet" href="/CSS/card.css">
-    <link rel="stylesheet" href="/CSS/iconos.css">
     <link rel="stylesheet" href="/CSS/footer.css">
+    <link rel="stylesheet" href="/CSS/form.css">
   </head>
   <body>
     <header>
-      <div class="header-principal wrap">
+      <div class="wrap">
         
-      
-            <div class="logo-cabecera"> <!-- Encabezado logo -->
-            <img src="/Imagenes/Logo-gnaranja-blanco.png" class="logo-cabecera" alt="Logo Oficial Gnaranja"/>
-            </div>
-
-            <div class="buscador-carrito">
-              <div class="buscador"> <!-- Encabezado buscador -->
-              <input type="text" id="buscador" placeholder="!El que busca encuentra!"/>
+          <!-- Encabezado logo -->
+           <img src="/Imagenes/Logo-gnaranja-blanco.png" class="logo" alt="Logo Oficial Gnaranja"/>
+         
+          <!-- Encabezado buscador -->
+          <div class="input-group">
+              <input type="search" id="buscador" placeholder="!El que busca encuentra!"/>
               <i class="bi bi-search"></i>
-              </div>
+          </div>
 
-              <div class="carrito"> <!-- Encabezado carrito -->
-              <button type="button" class="btn"><a href="#">Carrito</a></button>
-              <span class="circulo-numero"><p class="numero-carrito">5</p></span>
-              </div>
-          </div>
-          </div>
+          <!-- Encabezado carrito -->
+          <a href="#" class="btn" id="carrito">
+          <i class="bi bi-cart-fill"></i>
+          Carrito
+          <span>50</span>
+          </a>
+              
+        </div>
     </header>
 
-        <div>
-        <nav class="header-secundario"><!--Inicio contenedor navegador cabecera-->
+    <div  class="menu-header">
+      <nav class="wrap"><!--Inicio contenedor navegador cabecera-->
             <div> <!--Contenedor navegador 1-->
-              <ul class="menu-header-1">
+              <ul>
                 <li><a href="#">Productos</a></li>
                 <li><a href="#">Nosotros</a></li>
                 <li><a href="#">Contacto</a></li>
@@ -52,157 +52,139 @@
             </div>
     
             <div> <!--Contenedor navegador 2-->
-              <ul class="menu-header-1">
+              <ul>
                 <li><a href="#">Mis pedidos</a></li>
                 <li><a href="#">Logout</a></li>
               </ul>
-            </div>
-          </nav> <!--Cierre contededor navegador cabecera-->
-      </div>
+      </nav>
+    </div>
 
-    <main class="wrap">
-      <section> <!--Contenedor apertura de producto-->
-
-          <h1 class="h3">Mejores productos tecnológicos 2023</h1>
+    <main>
+      <section class="jumbotron"> <!--Contenedor jumbotron-->
+        <div  class="wrap">
+          <h1 id="h1-index">Mejores productos tecnológicos 2023</h1>
           <h3 class="h4">¡Artículos Geniales para Gente Encantadora!</h3>
           <button type="button" class="btn-block"><a href="#">Ver todos los productos</a></button>
-        
-     <div class="contenedor-card"> <!--Contenedor general de productos-->
-
-
+        </div>   
+      </section>
+    
+      <section class="wrap"> <!--TARJETAS PRODUCTOS-->
+    
                     <!-- ****** CONTENEDOR PRODUCTO UNO ******-->
+        <div class="card-all"> 
 
-        <div class="card"> 
+              <div class="card"> <!--Contenedor DESCRIPCION producto 1-->
+                  <div> <!--Contenedor imagen producto 1-->
+                  <img src="/Imagenes/Altavoces.jpg" class="image" alt="Altavoces" />
+                  </div>
+                
+                    <div class="card-contenido"> <!--Descripción del productos 1-->
+                      
+                          <div class="precio">
+                            <h2 class="h3">Altavoces T&G</h2>
+                            <div class="h3">450,99<i class="bi bi-currency-euro m-color"></i></div>
+                          </div>
+                        
+                        <div class="valoraciones"> <!--Contenedor valoración producto 1-->
+                          <div class="valoraciones-positivas">
+                            <i class="bi bi-star"></i>
+                            <i class="bi bi-star"></i>
+                            <i class="bi bi-star"></i>
+                            <i class="bi bi-star"></i>
+                          </div>
 
+                          <div class="valoraciones-negativas">
+                            <i class="bi bi-star"></i>
+                          </div>
+                        </div> <!--Cierre contenedor valoración producto 1-->
+
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam modi iste aspernatur 
+                          veritatis architecto. Ratione assumenda amet quos enim, officiis odio sed eligendi, ut incidunt
+                          reiciendis consequuntur architecto fugit minus.</p>
+                      
+                        <div class="card-botones"> <!--Contenedor botones del producto 1-->
+                            <button type="button" class="btn"><a href="#">Añadir al carrito</a></button>
+                            <button type="button" class="btn-secundario"><a href="#">Ver</a></button>
+                        </div>
+                  </div>
+            </div> <!--Cierre contenedor DESCRIPCIÓN producto 1-->
+
+            <div class="card"> <!--Contenedor DESCRIPCION producto 2-->
+              <div> <!--Contenedor imagen producto 2-->
+              <img src="/Imagenes/Auriculares.jpg" class="image" alt="Auriculares" />
+              </div>
+            
+                <div class="card-contenido"> <!--Descripción del productos 2-->
+                  
+                      <div class="precio">
+                        <h2 class="h3">Auriculares Stereo</h2>
+                        <div class="h3">450,99<i class="bi bi-currency-euro m-color"></i></div>
+                      </div>
+                    
+                    <div class="valoraciones"> <!--Contenedor valoración producto 2-->
+                      <div class="valoraciones-positivas">
+                        <i class="bi bi-star"></i>
+                        <i class="bi bi-star"></i>
+                        <i class="bi bi-star"></i>
+                        <i class="bi bi-star"></i>
+                        <i class="bi bi-star"></i>
+                      </div>
+
+                      <div class="valoraciones-negativas">
+                        <!-- <i class="bi bi-star"></i> -->
+                      </div>
+                    </div> <!--Cierre contenedor valoración producto 2-->
+
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam modi iste aspernatur 
+                      veritatis architecto. Ratione assumenda amet quos enim, officiis odio sed eligendi, ut incidunt
+                      reiciendis consequuntur architecto fugit minus.</p>
+                  
+                    <div class="card-botones"> <!--Contenedor botones del producto 2-->
+                        <button type="button" class="btn"><a href="#">Añadir al carrito</a></button>
+                        <button type="button" class="btn-secundario"><a href="#">Ver</a></button>
+                    </div>
+              </div>
+        </div> <!--Cierre contenedor DESCRIPCIÓN producto 2-->
+
+        <div class="card"> <!--Contenedor DESCRIPCION producto 3-->
           <div> <!--Contenedor imagen producto 1-->
-            <img src="/Imagenes/Altavoces.jpg" alt="Altavoces" />
+          <img src="/Imagenes/cascos.jpg" class="image" alt="Cascos TWS" />
           </div>
+        
+            <div class="card-contenido"> <!--Descripción del productos 3-->
+              
+                  <div class="precio">
+                    <h2 class="h3">Cascos TWS</h2>
+                    <div class="h3">450,99<i class="bi bi-currency-euro m-color"></i></div>
+                  </div>
+                
+                <div class="valoraciones"> <!--Contenedor valoración producto 3-->
+                  <div class="valoraciones-positivas">
+                    <i class="bi bi-star"></i>
+                    <i class="bi bi-star"></i>
+                    <i class="bi bi-star"></i>
+                  </div>
 
-          <div class="detalle-card"> <!--Contenedor descripción producto 1-->
+                  <div class="valoraciones-negativas">
+                    <i class="bi bi-star"></i>
+                    <i class="bi bi-star"></i>
+                  </div>
+                </div> <!--Cierre contenedor valoración producto 3-->
+
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam modi iste aspernatur 
+                  veritatis architecto. Ratione assumenda amet quos enim, officiis odio sed eligendi, ut incidunt
+                  reiciendis consequuntur architecto fugit minus.</p>
+              
+                <div class="card-botones"> <!--Contenedor botones del producto 3-->
+                    <button type="button" class="btn"><a href="#">Añadir al carrito</a></button>
+                    <button type="button" class="btn-secundario"><a href="#">Ver</a></button>
+                </div>
+          </div>
+    </div> <!--Cierre contenedor DESCRIPCIÓN producto 3-->
+        
+        </div> <!--Cierre contenedor TODOS LOS PRODUCTOS-->
             
-            <div class="descripcion-card"> <!--Descripción del productos 1-->
-              
-              <h2 class="h5">Altavoces T&G</h2>
-             
-              <div class="precio">
-                <p>450,99</p><span><i class="bi bi-currency-euro"></i></span>
-              </div>
-            </div>
-
-           
-            <div class="valoraciones"> <!--Contenedor valoración producto 1-->
-              <div class="valoraciones-positivas">
-                <i class="bi bi-star"></i>
-                <i class="bi bi-star"></i>
-                <i class="bi bi-star"></i>
-                <i class="bi bi-star"></i>
-                <i class="bi bi-star valoraciones-negativas"></i>
-              </div>
-
-             
-            </div> <!--Cierre contenedor valoración producto 1-->
-
-            <p>Consigue los mejores productos 2023</p>
-           
-            <div class="card-botones"> <!--Contenedor botones del producto 1-->
-                <button type="button" class="btn"><a href="#">Añadir al carrito</a></button>
-                <button type="button" class="btn-secundario"><a href="#">Ver</a></button>
-            </div>
-          </div> <!--Cierre contenedor detalle producto 1-->
-        </div> 
-
-                        <!-- ****** CONTENEDOR PRODUCTO DOS ******-->
-        <div class="card"> <!--Contenedor producto 2-->
-
-          <div> <!--Contenedor imagen producto-->
-            <img src="/Imagenes/Auriculares.jpg" alt="Auriculares" />
-          </div>
-
-          <div class="detalle-card"> <!--Contenedor descripción producto 2-->
-            
-            <div class="descripcion-card"> <!--Descripción del productos 1-->
-              
-              <h2 class="h5">Auriculares Estereo</h2>
-             
-              <div class="precio">
-                <p>450,99</p><span><i class="bi bi-currency-euro"></i></span>
-              </div>
-            </div>
-
-           
-            <div class="valoraciones"> <!--Contenedor valoración producto 2-->
-              <div class="valoraciones-positivas">
-                <i class="bi bi-star"></i>
-                <i class="bi bi-star"></i>
-                <i class="bi bi-star"></i>
-
-              </div>
-
-              <div class="valoraciones-negativas">
-                <i class="bi bi-star"></i>
-                <i class="bi bi-star"></i>
-              </div>
-            </div> <!--Cierre contenedor valoración producto 2-->
-
-            <p>Consigue los mejores productos 2023</p>
-           
-            <div class="card-botones"> <!--Contenedor botones del producto 2-->
-                <button type="button" class="btn"><a href="#">Añadir al carrito</a></button>
-                <button type="button" class="btn-secundario"><a href="#">Ver</a></button>
-            </div>
-          </div> <!--Cierre contenedor detalle producto DOS-->
-
-        </div> <!--Cierre contenedor producto 2-->
-
-                       <!-- ****** CONTENEDOR PRODUCTO TRES ******-->
-       
-      <div class="card"> <!--Contenedor producto 3-->
-
-        <div> <!--Contenedor imagen producto-->
-          <img src="/Imagenes/cascos.jpg" alt="Cascos TWS" />
-        </div>
-
-        <div class="detalle-card"> <!--Contenedor descripción producto 3-->
-          
-          <div class="descripcion-card"> <!--Descripción del productos 1-->
-              
-            <h2 class="h5">Cascos T&G</h2>
-           
-            <div class="precio">
-              <p>450,99</p><span><i class="bi bi-currency-euro"></i></span>
-            </div>
-          </div>
-
-         
-          <div class="valoraciones"> <!--Contenedor valoración producto 3-->
-            <div class="valoraciones-positivas">
-              <i class="bi bi-star"></i>
-              <i class="bi bi-star"></i>
-              <i class="bi bi-star"></i>
-              <i class="bi bi-star"></i>
-              <i class="bi bi-star"></i>
-            </div>
-
-            <div class="valoraciones-negativas">
-              <!-- <i class="bi bi-star"></i> -->
-            </div>
-          </div> <!--Cierre contenedor valoración producto 3-->
-
-          <p>Consigue los mejores productos 2023</p>
-         
-          <div class="card-botones"> <!--Contenedor botones del producto uno-->
-              <button type="button" class="btn"><a href="#">Añadir al carrito</a></button>
-              <button type="button" class="btn-secundario"><a href="#">Ver</a></button>
-          </div>
-        </div> <!--Cierre contenedor detalle producto 3-->
-
-      </div> <!--Cierre contenedor producto 3-->
-
-      
-
-      </div> <!--Cierre contenedor general de productos-->
-
-    </section> <!--Cierre contenedor productos-->
+    </section> <!--Cierre section productos-->
   </main>
 
     <section class="contenedor-testimonio"> <!--Contenedor testimonios clientes-->
@@ -241,29 +223,28 @@
 
     </section> <!--Cierre contenedor testimonios clientes-->
 
-
+<section class="wrap">
     <div class="contenedor-iconos"> <!--Contenedor Garantias y servicios ICONOS-->
         
-        <div class="contenedor-individual-iconos"> <!--Pago seguro-->
-            <i class="bi bi-cone-striped icono"></i>
-            <div class="texto-icono">
-                <h5>Pago seguro</h5>
-                <p>100% garantizado</p>
-            </div>
+        <div class="iconos"> <!--Pago seguro-->
+          <i class="bi bi-cone-striped icono"></i>
+          <div class="texto-icono">
+            <h5>Pago seguro</h5>
+            <p>100% garantizado</p>
+          </div>
         </div>
       
 
-        <div  class="contenedor-individual-iconos"> <!--Envío gratis-->
+        <div  class="iconos"> <!--Envío gratis-->
             <span><i class="bi bi bi-truck icono"></i></span>
             <div class="texto-icono">
                 <h5>Envío gratis</h5>
                 <p>En pedidos +100€</p>
             </div>
         </div>
+    
       
-
-      
-        <div  class="contenedor-individual-iconos"> <!--2 años garantía-->
+        <div  class="iconos"> <!--2 años garantía-->
             <span><i class="bi bi-check-square-fill icono"></i></span>
             <div class="texto-icono">
                 <h5>2 años de garantía</h5>
@@ -271,7 +252,7 @@
             </div>
         </div>
       
-        <div class="contenedor-individual-iconos"> <!--Ofertas únicas-->
+        <div class="iconos"> <!--Ofertas únicas-->
             <span><i class="bi bi-gift-fill icono"></i></span>
             <div class="texto-icono">
                 <h5>Ofertas únicas</h5>
@@ -280,7 +261,7 @@
         </div>
     
     </div>  <!--Cierre contenedor Garantias y servicios-->
-
+  </section>
     <footer>
         <div class="contenedor-footer-1"> <!--Inicio contenedor uno pie de página-->
             <div>
