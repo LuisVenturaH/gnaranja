@@ -1,92 +1,89 @@
 
 header {
     background-color: var(--negro);
-    
+    padding: 16px 0;
+
 }
 
-.header-principal {
+header .wrap {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    /* background-color: var(--negro); */
-    padding: 32px 32px 0 64px;
-    gap: 64px;
-    width: 80%;
-}
-
-header .logo-cabecera {
-    flex: 1;
-    margin: auto;
-    width: 100%;
+    gap: 32px;
     margin-bottom: 32px;
 }
 
-/*ESTILOS PARA EL BUSCADOR*/
-.buscador-carrito {
-    display: flex;
-    flex: 2;
-    align-items: center;
-    justify-content: space-evenly;
+.logo {
+    margin: 0;
+    white-space: nowrap;
+    width: 40%;
 }
 
-.header-principal .buscador {
-    flex: 1;
-    width: 480px;
-    align-content: center;
-    font-size: 1rem;
-}
+/* ESTILOS PARA CONTROLAR EL BUSCADOR */
 
-.header-principal .buscador input {
-    width: 400px;
-    padding: 16px 24px;
-    border: none;
-    border-radius: 8px;
-    align-items: center;
-    
-}
-
-
-/* ESTILOS PARA CONTROLAR EL CARRITO */
-.carrito { /*Controla el carrito*/
+header .input-group {
     position: relative;
-    color: var(--blanco);
-    align-items: left;
-    justify-content: space-around;
-    margin: auto;
+    width: 100%;
 }
 
-.numero-carrito { /*Controla los estilos del número del carrito*/
+header .bi-search {
+    position: absolute;
+    color: var(--primario);
+    top: 16px;
+    right: 16px;
+
+}
+
+/* ESTILOS PARA CONTROLAR EL CARRITO */ 
+    header .bi-bag-cart-fill {
+    color: var(--blanco);
+   
+}
+
+#carrito {
+    position: relative;
+    white-space: nowrap;
+}
+
+#carrito span {
     position:absolute;
-    top: -24px;
+    top: -8px;
     right: -8px;
     font-size: 0.75rem;
     font-weight: bold;
     width: 24px;
     height: 24px;
-    color: var(--primario);
-    background-color: var(--blanco);
-    border: 0.5px solid var(--primario);
+    color: var(--blanco);
+    background-color: var(--negro);
+    border: 0.5px solid var(--blanco);
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
+/* ESTILOS PARA MENU PRINCIPAL  */
 
-/* - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
-
-.header-secundario {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
+.menu-header {
     background-color: var(--primario);
 }
 
-.menu-header-1 {
+.menu-header .wrap {
     display: flex;
     align-items: center;
     justify-content: space-between;
     font-weight: bold;
     gap: 16px;
+    
 }
+
+.menu-header ul {
+    padding: 0;
+}
+
+.menu-header li {
+    display: inline-block;
+    margin-right: 16px;
+}
+
 

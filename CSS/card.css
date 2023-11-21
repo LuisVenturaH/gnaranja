@@ -1,83 +1,84 @@
 
-.contenedor-card {
+.card-all {   /*Controla estilos de todas las tarjetas*/
     display: flex;
     margin: 16px auto;
     gap: 24px;
 }
 
-.card {
-    background-color: var(--gris);
+.card-all .card {
+    width: 100%;
+}
+
+.card { /*Controla los estilos de las tarjetas indiviaduales*/
     border-radius: 16px;
-    display: flex;
-    align-items: center;
-    justify-items: center;
-    flex-direction: column ;
     overflow: hidden;
+    background: var(--blanco);
     padding-bottom: 16px ;
     box-shadow: -5px 15px 10px #888888;
 }
 
-.detalle-card {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-items: center;
-    gap: 8px;
-    /* margin: auto; */
-}
-
-.detalle-card .descripcion-card {
-    display: flex;
-    align-items: baseline;
-    flex-direction: row;
-    justify-items: center;
-    gap: 8px;
-   
-}
-
-.card img {
-    display: flex;
-    align-items: center;
+.card img { /*Controla los estilos de la imagen de las tarjetas*/
     max-width: 100%;
 }
 
-.precio {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: x-large;
-    font-weight: 800;
-    color: var(--primario);
+.card image {
+    background-color: var(--gris);
+    /* background-position: center center; */
+    background-size: cover;
 }
 
-.valoraciones {
+.card .card-contenido { /*Controla los estilos de descripción y precio*/
+   display: flex;
+   flex-direction: column;
+   padding: 24px;
+   gap: 24px;
+  
+}
+
+.card .card-contenido .precio {
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    justify-items: center;
-    flex-direction: row;
+ 
+}
+
+.card .card-contenido .precio .h3 {
+    padding: 0;
+    margin: 0;
+    font-size: 1.3rem;
+}
+
+
+.valoraciones {
+    display: inline-flex;
+    font-size: 1rem;
+}
+
+.valoraciones .bi {
+   margin-right: 2px;
 }
 
 .valoraciones-positivas {
+    display: inline-flex;
     color: var(--primario);
 }
 
 .valoraciones-negativas {
+    display: inline-flex;
     color: #ffd6b0;
+}
+
+.card p {
+    font-size: 0.75rem;
+    padding: o;
+    margin: 0;
 }
 
 .card-botones {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     gap: 16px;
-}
-
-.btn-secundario { /*Controla los estilos de los botones secundarios*/
-    background-color: var(--blanco);
-    border: 1px solid var(--secundario);
-}
-
-.detalle-card .card-botones .btn-secundario a {
-    color: var(--secundario);
 }
 
 

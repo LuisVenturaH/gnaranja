@@ -5,37 +5,65 @@
     --negro: #111111;
     --blanco: #FCFCFC;
     --gris: #E5E5E5;
-    --resalto: #229f00;
+    --resalto: #fb5000;
+    --error: #fd0707;
   }
-
-body {
-    font-family: "inter", sans-serif;
-    color: var(--negro);
-    background-color: var(--gris)
-}
 
 * {
     box-sizing: border-box; /*Sirve para resetear todos los bordes de la web y que tengan la misma especificación*/
 }
 
-main {
-    background-color: var(--gris);
-    margin-top: 80px;
-    padding-top: 80px;
-}
-main h1 {
+
+.m-color {
     color: var(--primario);
-    background-color: var(--gris);
-    padding: 16px 16px 0 16px;
-    margin-top: 8px ;
-    font-weight: 800;
 }
 
-body section {
+body {
+    font-family: "inter", sans-serif;
+    color: var(--negro);
     background-color: var(--gris);
+    margin: 0;
+
 }
-    
-p {margin-bottom: 1rem;
+
+.wrap {
+    max-width: 1080px;
+    padding: 0 16px;
+    margin: 0 auto;
+}
+
+main {
+    background-color: var(--gris);
+    margin: 0 auto;
+}
+
+.jumbotron {
+background-image: url(/Imagenes/Gente4.jpg);
+background-size: cover;
+background-position: center center;
+padding: 112px 0 80px 0;
+color: var(--blanco);
+}
+
+
+main #h1-index {
+    color: var(--blanco);
+    font-weight: 900;
+    font-size: 4.5rem;
+    text-shadow: 2px 2px 4px var(--negro);
+}
+
+/* Hasta aquí todo bien*/
+
+
+main .h4 {
+    font-style: italic;
+    margin: 0 16px 32px 16px;
+    color: var(--blanco);
+}
+
+p {
+    margin-bottom: 1rem;
 }
     
 h1, h2, h3, h4, h5, H6 { /* AGREGO ESTILO A TODOS LOS H DE LA WEB */
@@ -63,11 +91,6 @@ h6 {font-size: 1rem;}
     
 small, .text_small {font-size: 0.8rem;}
 
-.wrap {
-    max-width: 1080px;
-    padding: 0 16px;
-    margin: 0 auto;
-}
 
 /* CLASES INTELIGENTES PARA REUTILIZAR LOS H Y NO UTILIZAR LA PROPIA ETIQUETA H */
 
@@ -87,14 +110,11 @@ small, .text_small {font-size: 0.8rem;}
 .h6 {font-size: 1rem;}
 
 /* Cambia el color del marcador de posición en campos de entrada (placeholder) */
+
 input::placeholder {
     color: var(--primario); 
 }
 
-main .h4 {
-    font-style: italic;
-    margin: 0 16px 32px 16px;
-}
 
 /*ESTILOS PARA SECION TESTIMONIO*/
 
@@ -136,10 +156,6 @@ main .h4 {
     flex-direction: column;
     align-items: center;
     gap: 8px;
-}
-
-.m-color {
-    color: var(--primario);
 }
 
   

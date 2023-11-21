@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<br>
+    <h1>Formularios de HTML</h1>
+    <!--Los dos métodos principales utilizados en los formualarios son:
+    method="get" para login
+    method="post" para registrar.
+    Casi no se usan, pues se hacen desde javascript
+    -->
+<br>
+    <label for="nombre"> Tu nombre: <input type="text" name="nombre" id="nombre"/></label> </form></br></br>
+    <input type="email" name="correo" id="correo" placeholder="Tu email aquí"/></br></br>
+    <label for="contraseña">Introduce tu contraseña: <input type="password" name="contraseña" id="contraseña"/></label></br></br>
+    <input type="number" name="telefono" id="telefono" placeholder="Teléfono"/>
+    <input type="date" name="fecha" id="fecha"/>
+</br>
+<h3>Label tipo radio, para seleccionar uno entre un listado</h3>
+    <label for="mujer">
+        <input type="radio" name="gender" id="mujer"/> Femenino 
+    </label>
+    <label for="hombre">
+        <input type="radio" name="gender" id="hombre"/> Masculino 
+    </label>
+    <label for="otro">
+        <input type="radio" name="gender" id="otro"/> Otros 
+    </label>
+
+    <h3>Label tipo checkbox, para seleccionar uno o varios entre un listado</h3>
+    <input type="checkbox" name="Vehiculo1" value="coche"/> Coche
+    <input type="checkbox" name="Vehículo2" value="scooter" checked/> Sccooter <!--Checked permite que quede preseleccionado un objeto-->
+    <input type="checkbox" name="Vehiculo3" value="camion"/> Camión
+
+       <h4>Textarea que sirve para colocar un cuadro de envio de mensaje</h4>
+    <textarea name="reseña" id="reseña" rows="5" cols="50" placeholder="Escribe tu mensaje aquí"></textarea>
+
+    <h3>Otros inputs</h3>
+     <input type="file" name="archivo" id="archivo"/></br></br>
+   
+     <select name="pais" id="pais">
+        <optgroup label="Europa"><!--optgroup sirve para agrupar mismos tipos de elementos-->
+            <option value="ES">España</option>
+            <option value="IT">Italia</option>
+        </optgroup>
+
+        <option value="US">Estados Unidos</option>
+        <option value="GB" selected>Inglaterra</option>
+        <option value="RD">Republica Dominicana</option>
+     </select>
+
+     <input type="submit" name="enviar" id="enviar"/> Enviar </br></br>
+     <button type="submit">Enviar formulario</button>
+     <input type="reset" value="Restablecer"/>
+</form>
+
+<h2>Otro tipo de formulario es fieldset (reagrupación de campos)</h2>
+<form>
+    <fieldset>
+        <legend>Datos Personales</legend>
+        <input type="text" name="nombre" id="nombre" placeholder="nombre"/>
+        <input type="text" name="apellido" id="apelido" placeholder="apellido"/>
+        <input type="submit" value="Enviar"/> 
+    </fieldset>
+</form>
+</body>
+</html>

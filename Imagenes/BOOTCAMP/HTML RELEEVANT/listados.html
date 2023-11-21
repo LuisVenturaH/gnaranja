@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listados</title>
+</head>
+<body>
+    <h1>Listados en HTML</h1>
+    <!--Listados desordenadas. La etiqueteca es ul (significa unorder list/ lista desordenada)-->
+    <ul>
+        <!--dentro de ul agregamos los elementos que queremos agregar a la lista con li (significa list item/ elementos de la lista)-->
+        <li>Primer elemento</li>
+        <li>Segundo elemento</li>
+        <li>Tercer elemento</li>
+    </ul>
+
+    <!--Listas ordenadas. La etiqueta es ol (significa order list/ litado ordenado)-->
+    <ol type="i"> 
+        <!--Los atributos de ol en type son:
+        A: pone alfabeto en mayúscula
+        a: pone alfaberto en minúscula
+        I: numeros romano mayuscula
+        i: numeros romano minusculos
+        sin atributo escoge directamente números.     -->
+        <!--dentro de ul agregamos los elementos que queremos agregar a la lista con li (significa list item/ elementos de la lista)-->
+        <li>Primer elemento</li>
+        <li>Segundo elemento</li>
+        <li>Tercer elemento
+            <ol>
+                <li>Nuevo primer elemento</li>
+                <li>Nuevo segundo elemento</li>
+            </ol>
+        </li>
+
+    </ol>
+
+    <!--Listado de definición. Su etiqueta es dl, data list. Dentro se utiliza la subetiqueta dt, que sería data list, y luego dd, que es data description-->
+    <dl>
+        <dt><b>HTML</b></dt>
+        <dd>Sirve para hacer el esqueleto a la página</dd>
+        <dt><b>CSS</b></dt>
+        <dd>Lenguaje de programación para dar belleza a la pñagina</dd>
+        <dt><b>Javascript</b></dt>
+        <dd>Lenguaje de programación para dar funcionalidad a la página</dd>
+       
+    </dl>
+
+
+</body>
+</html>
